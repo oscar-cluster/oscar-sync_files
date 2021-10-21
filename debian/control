@@ -1,7 +1,7 @@
 Source: sync-files
 Section: misc
 Priority: extra
-Maintainer: Geoffroy Vallee <valleegr@ornl.gov>
+Maintainer: Olivier Lahaye <olivier.lahaye@cea.fr>
 Build-Depends: debhelper (>= 5)
 Standards-Version: 3.7.2
 
