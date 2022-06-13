@@ -6,7 +6,7 @@
 Summary: OSCARized File Synchronization System
 Name: sync-files
 Version: 2.5.10
-Release: 1%{?dist}
+Release: 2%{?dist}
 Distribution: OSCAR
 Packager: Geoffroy Vallee <valleegr@ornl.gov>
 URL: http://oscar.sourceforge.net/
@@ -22,8 +22,8 @@ Requires: perl
 Requires: /usr/bin/perl
 Requires: perl-AppConfig
 Requires: perl(Getopt::Long)
-Requires: oscar-base-lib > 6.0.5
-Requires: oscar-utils >= 6.1.2
+Requires: liboscar-server >= 6.3
+Requires: oscar-utils >= 6.3
 
 Obsoletes: sync-users-oscar
 
@@ -73,6 +73,8 @@ mv /etc/crontab.preun /etc/crontab
 #==============================================================
 
 %changelog
+* Mon Jun 13 2022 Olivier Lahaye <olivier.lahaye@cea.fr> 2.5.10-2
+- adapt deps to new oscar package
 * Tue Apr  8 2014 Olivier Lahaye <olivier.lahaye@cea.fr> 2.5.10-1
 - New version (uses /etc/cron.d/sync_files).
   Updated preun accordingly.
