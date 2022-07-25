@@ -353,7 +353,7 @@ sub update_temp_passwd_like ($$$) {
     my ($my_src, $dest, $out) = @_;
     my %templ;
 
-    oscar_log(5, INFO, "This is a passwd or group file, parsing...";
+    oscar_log(5, INFO, "This is a passwd or group file, parsing...");
 
     open (FIN, "$my_src")
         or (oscar_log(1, ERROR, "Could not open file $my_src"), return -1);
@@ -412,7 +412,7 @@ sub find_real_file ($$$) {
         oscar_log(5, INFO, "Searching for a temp file ($src)...");
 
         if (!OSCAR::Utils::is_a_valid_string ($dist)) {
-            oscar_log(1, ERROR, "No valid distro [$distro]");
+            oscar_log(1, ERROR, "No valid distro [$dist]");
             return undef;
         }
 
